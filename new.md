@@ -3,6 +3,15 @@
 ## Introduction
 Dans le cadre de ce projet, nous allons développer un outil JavaScript permettant de calculer le ratio de contraste entre deux couleurs. L'objectif est d'améliorer l'accessibilité des applications web en garantissant une lisibilité optimale pour tous les utilisateurs, y compris ceux ayant des limitations visuelles.
 
+### Règles d'accessibilité WCAG :
+Le WCAG (Web Content Accessibility Guidelines) établit des recommandations pour rendre les contenus web accessibles à tous. Dans le cadre de notre projet, nous nous conformerons aux règles d'accessibilité WCAG en matière de contraste de couleurs, en particulier à la règle 1.4.3 qui définit les ratios de contraste recommandés.
+
+WCAG Ratio de contraste recommandé :
+- Petit texte : Ratio de contraste d'au moins 4,5:1.
+- Texte normal : Ratio de contraste d'au moins 3:1.
+
+En respectant ces règles, nous nous assurerons que les combinaisons de couleurs utilisées dans nos applications web offrent une lisibilité adéquate pour tous les utilisateurs, y compris ceux ayant des limitations visuelles.
+
 ## Phase 1 : Découpe logique
 1. Conversion de couleurs : Nous commencerons par mettre en place une fonction de conversion pour convertir les codes hexadécimaux en valeurs RGB. Cela nous permettra d'obtenir une représentation normalisée des couleurs.
 2. Calcul du ratio de contraste : Nous implémenterons une fonction pour calculer le ratio de contraste entre deux couleurs. Ce ratio est essentiel pour évaluer la lisibilité des éléments visuels à l'écran.
@@ -45,12 +54,3 @@ L'interface utilisateur comportera les éléments suivants :
 - Deux champs de couleur pour sélectionner la couleur de fond et la couleur du texte.
 - Un élément pour afficher le ratio de contraste calculé.
 - Des mécanismes de mise à jour automatique du ratio de contraste lorsque les couleurs sont modifiées.
-
-Règles d'accessibilité WCAG :
-Le WCAG (Web Content Accessibility Guidelines) établit des recommandations pour rendre les contenus web accessibles à tous. Dans le cadre de notre projet, nous nous conformerons aux règles d'accessibilité WCAG en matière de contraste de couleurs, en particulier à la règle 1.4.3 qui définit les ratios de contraste recommandés.
-
-WCAG Ratio de contraste recommandé :
-- Petit texte : Ratio de contraste d'au moins 4,5:1.
-- Texte normal : Ratio de contraste d'au moins 3:1.
-
-En respectant ces règles, nous nous assurerons que les combinaisons de couleurs utilisées dans nos applications web offrent une lisibilité adéquate pour tous les utilisateurs, y compris ceux ayant des limitations visuelles.
